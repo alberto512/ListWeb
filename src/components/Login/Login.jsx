@@ -38,7 +38,7 @@ const Login = ({ setToken }) => {
         const data = await auth(formData);
 
         if (data?.token){
-            window.location.href = "http://localhost:3000/ListsWeb/"
+            window.location.href = "https://alberto512.github.io/ListsWeb/"
 
             setToken(data.token);
         } else if(data?.non_field_errors[0] === "Unable to log in with provided credentials.") {

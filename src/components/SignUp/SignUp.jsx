@@ -38,7 +38,7 @@ const Signup = ({ setToken }) => {
         const data = await auth(formData);
 
         if (data?.token){
-            window.location.href = "http://localhost:3000/ListsWeb/"
+            window.location.href = "https://alberto512.github.io/ListsWeb/"
 
             setToken(data.token);
         } else if(data?.username[0] === "A user with that username already exists.") {
