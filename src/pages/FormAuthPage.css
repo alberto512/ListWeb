@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Slabo 27px', serif;
+}
+
+@media screen and (max-width: 500px) {
+  .recipes {
+    font-size: 900%;
+  }
+}

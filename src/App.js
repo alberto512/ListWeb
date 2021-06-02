@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React from "react";
+import Home from "./pages/Home";
+import FormAuthPage from "./pages/FormAuthPage";
+import AnimePage from "./pages/AnimePage"
 import './App.css';
+import "mdbreact/dist/css/mdb.css";
+import { Switch, Route } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import useToken from './useToken';
 
 function App() {
+  const { token } = useToken();
+
+  if(!token) {
+    return (
+      <div className="App">
+        <Switch>
+          <Route exact path="/ListsWeb/" component={Home}></Route>
+          <Route exact path="/ListsWeb/auth" component={FormAuthPage} ></Route>
+        </Switch>
+      </div>
+    );
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/ListsWeb/" component={Home}></Route>
+        <Route exact path="/ListsWeb/anime" component={AnimePage}></Route>
+        {/*<Route exact path="/ListsWeb/anime/info/:id" component={Info}></Route>*/}
+      </Switch>
     </div>
   );
 }
