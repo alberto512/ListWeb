@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/pages
+/build
 
 # misc
 .DS_Store
