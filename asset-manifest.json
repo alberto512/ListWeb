@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ListsWeb/static/css/main.c5e5cc5c.chunk.css",
-    "main.js": "/ListsWeb/static/js/main.0b63b491.chunk.js",
-    "main.js.map": "/ListsWeb/static/js/main.0b63b491.chunk.js.map",
+    "main.js": "/ListsWeb/static/js/main.dcff4b7e.chunk.js",
+    "main.js.map": "/ListsWeb/static/js/main.dcff4b7e.chunk.js.map",
     "runtime-main.js": "/ListsWeb/static/js/runtime-main.5a4c6011.js",
     "runtime-main.js.map": "/ListsWeb/static/js/runtime-main.5a4c6011.js.map",
     "static/css/2.9d8003dc.chunk.css": "/ListsWeb/static/css/2.9d8003dc.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.9d8003dc.chunk.css",
     "static/js/2.67ce48be.chunk.js",
     "static/css/main.c5e5cc5c.chunk.css",
-    "static/js/main.0b63b491.chunk.js"
+    "static/js/main.dcff4b7e.chunk.js"
   ]
 }
