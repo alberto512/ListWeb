@@ -23,9 +23,9 @@ const Signup = ({ setToken }) => {
     const formData = new FormData();
 
     const handleSubmit = async e => {
+        e.preventDefault();
         const form = e.currentTarget;
         if (form.checkValidity() === false) {
-            e.preventDefault();
             e.stopPropagation();
             return
         }
@@ -38,11 +38,7 @@ const Signup = ({ setToken }) => {
         const data = await auth(formData);
 
         if (data?.token){
-            console.log("Aqui1")
-
             window.location.href = "https://alberto512.github.io/ListsWeb/"
-
-            console.log("Aqui2")
 
             setToken(data.token);
         } else if(data?.username[0] === "A user with that username already exists.") {
