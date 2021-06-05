@@ -18,7 +18,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/ListsWeb/" component={Home}></Route>
-          <Route exact path="/ListsWeb/auth" component={FormAuthPage} ></Route>
+          <Route exact path="/ListsWeb/auth/" component={FormAuthPage} ></Route>
         </Switch>
       </div>
     );
@@ -28,9 +28,9 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/ListsWeb/" component={Home}></Route>
-        <Route exact path="/ListsWeb/anime" component={AnimePage}></Route>
-        <Route exact path="/ListsWeb/anime/add" component={AnimeForm}></Route>
-        <Route exact path="/ListsWeb/anime/info/:id" component={AnimeInfo}></Route>
+        <Route exact path="/ListsWeb/anime/" component={AnimePage}></Route>
+        <Route exact path="/ListsWeb/anime/add/" component={AnimeForm}></Route>
+        <Route exact path="/ListsWeb/anime/info/:id/" component={AnimeInfo}></Route>
       </Switch>
     </div>
   );
