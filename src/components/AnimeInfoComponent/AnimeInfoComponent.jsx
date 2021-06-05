@@ -45,7 +45,7 @@ class AnimeInfoComponent extends Component {
         }
       }
     )
-    window.location.replace("http://localhost:3000/ListsWeb/anime")
+    window.location.replace("https://alberto512.github.io/ListsWeb/anime")
   };
 
   componentDidMount() {
