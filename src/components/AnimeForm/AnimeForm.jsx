@@ -43,7 +43,7 @@ class AnimeForm extends Component {
             "Select one type"
         )
         .required("Select one type"),
-        seasons: Yup.number().required(),
+        seasons: Yup.number().min(0).required(),
         status: Yup.string().oneOf(
             ["Airing", "Finished", "Pending", "Cancelled"],
             "Select the status"
@@ -69,10 +69,10 @@ class AnimeForm extends Component {
       formData.append("type", item.type);
       formData.append("seasons", item.seasons);
       formData.append("status", item.status);
-      formData.append("personalStatus", item.personalStatus);
+      formData.append("personal_status", item.personalStatus);
       formData.append("platform", item.platform);
-      formData.append("nextSeason", item.nextSeason);
-      formData.append("additionalComments", item.additionalComments);
+      formData.append("next_season", item.nextSeason);
+      formData.append("additional_comments", item.additionalComments);
       if (file) {
         formData.append("image", file, item.image);
       }
@@ -90,7 +90,7 @@ class AnimeForm extends Component {
             title: "Good job!",
             text: "Your anime has been submited",
             icon: "success",
-            onClose: () => {
+            willClose: () => {
               window.location.reload(false);
             },
           });
@@ -100,7 +100,7 @@ class AnimeForm extends Component {
             title: "Oops...",
             text: "Something went wrong",
             icon: "error",
-            onClose: () => {
+            willClose: () => {
               window.location.reload(false);
             },
           });
