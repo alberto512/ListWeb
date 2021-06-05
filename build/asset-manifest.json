@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/ListsWeb/static/css/main.c5e5cc5c.chunk.css",
-    "main.js": "/ListsWeb/static/js/main.606639d2.chunk.js",
-    "main.js.map": "/ListsWeb/static/js/main.606639d2.chunk.js.map",
-    "runtime-main.js": "/ListsWeb/static/js/runtime-main.5a4c6011.js",
-    "runtime-main.js.map": "/ListsWeb/static/js/runtime-main.5a4c6011.js.map",
-    "static/css/2.9d8003dc.chunk.css": "/ListsWeb/static/css/2.9d8003dc.chunk.css",
-    "static/js/2.67ce48be.chunk.js": "/ListsWeb/static/js/2.67ce48be.chunk.js",
-    "static/js/2.67ce48be.chunk.js.map": "/ListsWeb/static/js/2.67ce48be.chunk.js.map",
-    "static/js/3.f1f8ace5.chunk.js": "/ListsWeb/static/js/3.f1f8ace5.chunk.js",
-    "static/js/3.f1f8ace5.chunk.js.map": "/ListsWeb/static/js/3.f1f8ace5.chunk.js.map",
+    "main.css": "/ListsWeb/static/css/main.3469682c.chunk.css",
+    "main.js": "/ListsWeb/static/js/main.7c9e3f4a.chunk.js",
+    "main.js.map": "/ListsWeb/static/js/main.7c9e3f4a.chunk.js.map",
+    "runtime-main.js": "/ListsWeb/static/js/runtime-main.708c8dbb.js",
+    "runtime-main.js.map": "/ListsWeb/static/js/runtime-main.708c8dbb.js.map",
+    "static/css/2.f0b773ec.chunk.css": "/ListsWeb/static/css/2.f0b773ec.chunk.css",
+    "static/js/2.82cbe035.chunk.js": "/ListsWeb/static/js/2.82cbe035.chunk.js",
+    "static/js/2.82cbe035.chunk.js.map": "/ListsWeb/static/js/2.82cbe035.chunk.js.map",
+    "static/js/3.1fe730fa.chunk.js": "/ListsWeb/static/js/3.1fe730fa.chunk.js",
+    "static/js/3.1fe730fa.chunk.js.map": "/ListsWeb/static/js/3.1fe730fa.chunk.js.map",
     "index.html": "/ListsWeb/index.html",
-    "static/css/2.9d8003dc.chunk.css.map": "/ListsWeb/static/css/2.9d8003dc.chunk.css.map",
-    "static/css/main.c5e5cc5c.chunk.css.map": "/ListsWeb/static/css/main.c5e5cc5c.chunk.css.map",
-    "static/js/2.67ce48be.chunk.js.LICENSE.txt": "/ListsWeb/static/js/2.67ce48be.chunk.js.LICENSE.txt",
+    "static/css/2.f0b773ec.chunk.css.map": "/ListsWeb/static/css/2.f0b773ec.chunk.css.map",
+    "static/css/main.3469682c.chunk.css.map": "/ListsWeb/static/css/main.3469682c.chunk.css.map",
+    "static/js/2.82cbe035.chunk.js.LICENSE.txt": "/ListsWeb/static/js/2.82cbe035.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/ListsWeb/static/media/arrow_right.0897f985.svg",
     "static/media/all.min.css": "/ListsWeb/static/media/fa-solid-900.f4f93856.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.5a4c6011.js",
-    "static/css/2.9d8003dc.chunk.css",
-    "static/js/2.67ce48be.chunk.js",
-    "static/css/main.c5e5cc5c.chunk.css",
-    "static/js/main.606639d2.chunk.js"
+    "static/js/runtime-main.708c8dbb.js",
+    "static/css/2.f0b773ec.chunk.css",
+    "static/js/2.82cbe035.chunk.js",
+    "static/css/main.3469682c.chunk.css",
+    "static/js/main.7c9e3f4a.chunk.js"
   ]
 }

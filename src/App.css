@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -14,8 +16,8 @@ html,
 body,
 #root,
 .App {
-  background-color: #D2A5FF;
   height: 100%;
   width: 100%;
   text-align: center;
+  font-family: 'Slabo 27px', serif;
 }

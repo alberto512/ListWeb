@@ -12,6 +12,11 @@ function NavBarGroup() {
     navBarRef.current.openNavBar();
   };
 
+  const logout = () => {
+    localStorage.removeItem('token');
+    window.location.reload()
+  }
+
   const { token } = useToken();
 
   if(!token) {
@@ -57,6 +62,11 @@ function NavBarGroup() {
               <li>
                 <NavLink exact activeClassName="current" to="/ListsWeb/anime">
                   Anime
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="current" to="/ListsWeb" onClick={logout}>
+                  Logout
                 </NavLink>
               </li>
             </ul>

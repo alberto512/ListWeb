@@ -1,8 +1,24 @@
 .item-deck {
-    position: absolute;
-    top: 40%;
-  }
+  position: absolute;
+  top: 40%;
+}
+
+.button-anime{
+  color: white !important;
+  background-color: #A9801A !important;
+  position: fixed !important;
+  top: 1% !important;
+  right: 1% !important;
+}
+
+.nav {
+  color: white !important;
+}
   
-  html {
-    overflow-x: hidden;
-  }
+html {
+  overflow-x: hidden;
+}
+
+.item-card-body {
+  background-color: #A9801A !important;
+}

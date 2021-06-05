@@ -5,8 +5,17 @@ import { CardDeck } from "react-bootstrap";
 import $ from "jquery";
 import axios from "axios";
 import "./ItemDeck.css";
-
 import { NavLink } from "react-router-dom";
+
+const getToken = () => {
+  const tokenString = localStorage.getItem('token');
+  const userToken = JSON.parse(tokenString);
+  if (userToken) {
+    return userToken
+  } else {
+    return undefined
+  }
+};
 
 function Empty(props) {
   const cont = props.counter;
@@ -66,8 +75,13 @@ class ItemDeck extends Component {
   };
 
   async getData(url) {
+
     let arrayaux2 = await axios
-      .get("https://recipes-backend-web.herokuapp.com/api/"+ url + "/")
+      .get("http://127.0.0.1:8000/api/"+ url + "/", {
+        headers: {
+          "Authorization": "Token " + getToken()
+        }
+      })
       .then(function (response) {
         let auxArray = [[]];
         let i = 0;
@@ -89,7 +103,11 @@ class ItemDeck extends Component {
 
   async getDataCustom(value, url) {
     let arrayaux2 = await axios
-      .get("https://recipes-backend-web.herokuapp.com/api/" + url + "/")
+      .get("http://127.0.0.1:8000/api/" + url + "/", {
+        headers: {
+          "Authorization": "Token " + getToken()
+        }
+      })
       .then(function (response) {
         let auxArray = [[]];
         let i = 0;
@@ -152,11 +170,10 @@ class ItemDeck extends Component {
               {value.map((value, index) => {
                 cont++;
                 let auxstr = "/ListsWeb/" + this.props.url + "/info/" +  value.id;
-                //auxstr = auxstr2.replace(" ", "");
                 return (
                   <Card className="item_card" key={index}>
                     <Card.Img variant="top" src={value.image} />
-                    <Card.Body>
+                    <Card.Body className="item-card-body">
                       <Card.Title>{value.title}</Card.Title>
                       <NavLink exact activeClassName="current" to={auxstr}>
                         <Button variant="primary">View More</Button>

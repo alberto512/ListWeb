@@ -4,15 +4,13 @@ import "./SearchBar.css";
 class SearchBar extends Component {
   handleClick = (e) => {
     e.preventDefault();
-    if (document.getElementById("input-bar").checkValidity()) {
-      this.props.value(document.getElementById("input-bar").value);
-    }
+    this.props.value(document.getElementById("input-bar").value);
   };
 
   render() {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="container-search">
           <form autoComplete="off">
             <div className="tb">
               <div className="td">

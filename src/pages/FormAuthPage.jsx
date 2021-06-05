@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Card from 'react-bootstrap/Card'
 import Nav from 'react-bootstrap/Nav'   
 import SignUp from '../components/SignUp/SignUp'
@@ -18,6 +18,9 @@ function Text(props) {
 
 const FormAuthPage = () => {
   const { setToken } = useToken();
+  useEffect(() => {
+    document.body.style.backgroundColor = "#D2A5FF"
+  });
   return (
     <React.Fragment>
       <NavBarGroup />

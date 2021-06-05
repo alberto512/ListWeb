@@ -25,3 +25,8 @@
   text-align: center;
   width: 100vw !important;
 }
+
+.card-img-top {
+  width: 100% !important;
+  height: 15vw !important;
+}

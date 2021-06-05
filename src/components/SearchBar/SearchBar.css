@@ -1,4 +1,4 @@
-/*.tb {
+.tb {
   display: table;
   width: 100%;
 }
@@ -19,16 +19,16 @@
   outline: none;
 }
 
-.container {
+.container-search {
   position: absolute;
   top: 5%;
   left: 0;
   right: 0;
   width: 100%;
   padding: 20px;
-  background-color: #ffd633;
+  background-color: #A9801A;
   border-radius: 20px;
-  box-shadow: 0 10px 40px #ffeb99, 0 0 0 20px #ffffff;
+  box-shadow: 0 10px 40px #A9801A, 0 0 0 20px #ffffff;
   transform: scale(0.6);
 }
 
@@ -40,7 +40,7 @@
 }
 
 .input-bar[type="text"]::placeholder {
-  color: #fff0b3;
+  color: #ffc637;
 }
 
 .cover {
@@ -134,4 +134,3 @@
   width: 40px;
   background-color: white;
 }
-*/

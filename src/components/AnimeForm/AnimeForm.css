@@ -1,0 +1,23 @@
+.label {
+    color: black;
+}
+  
+.custom-card {
+    right: 5%;
+    left: 5%;
+    width: 90%;
+    position: absolute;
+    top: 10%;
+}
+  
+.card-header-anime {
+    background-color: #A9801A !important;
+}
+  
+.card-body-anime {
+    background-color: #ffc637 !important;
+}
+  
+.custom-file-label {
+    z-index: 0 !important;
+}

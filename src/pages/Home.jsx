@@ -1,16 +1,22 @@
-import React from "react";
+import React, { Component } from "react";
 import NavBarGroup from "../components/NavBar/NavBarGroup";
 import "./Home.css";
 
-const Home = () => {
-  return (
-    <React.Fragment>
-      <NavBarGroup />
-        <div className="title">
-          <h1 className="lists">Lists Web</h1>
-        </div>
-    </React.Fragment>
-  );
+class Home extends Component {
+  componentDidMount() {
+    document.body.style.backgroundColor = "#D2A5FF"
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <NavBarGroup />
+          <div className="title">
+            <h1 className="lists">Lists Web</h1>
+          </div>
+      </React.Fragment>
+    );
+  }
 };
 
 export default Home;
