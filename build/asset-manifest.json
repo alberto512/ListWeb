@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/ListsWeb/static/css/main.3469682c.chunk.css",
-    "main.js": "/ListsWeb/static/js/main.ebed056c.chunk.js",
-    "main.js.map": "/ListsWeb/static/js/main.ebed056c.chunk.js.map",
-    "runtime-main.js": "/ListsWeb/static/js/runtime-main.708c8dbb.js",
-    "runtime-main.js.map": "/ListsWeb/static/js/runtime-main.708c8dbb.js.map",
+    "main.css": "/ListsWeb/static/css/main.3a1f2359.chunk.css",
+    "main.js": "/ListsWeb/static/js/main.107ad8ea.chunk.js",
+    "main.js.map": "/ListsWeb/static/js/main.107ad8ea.chunk.js.map",
+    "runtime-main.js": "/ListsWeb/static/js/runtime-main.6d134e5f.js",
+    "runtime-main.js.map": "/ListsWeb/static/js/runtime-main.6d134e5f.js.map",
     "static/css/2.f0b773ec.chunk.css": "/ListsWeb/static/css/2.f0b773ec.chunk.css",
-    "static/js/2.82cbe035.chunk.js": "/ListsWeb/static/js/2.82cbe035.chunk.js",
-    "static/js/2.82cbe035.chunk.js.map": "/ListsWeb/static/js/2.82cbe035.chunk.js.map",
-    "static/js/3.1fe730fa.chunk.js": "/ListsWeb/static/js/3.1fe730fa.chunk.js",
-    "static/js/3.1fe730fa.chunk.js.map": "/ListsWeb/static/js/3.1fe730fa.chunk.js.map",
+    "static/js/2.985f36c1.chunk.js": "/ListsWeb/static/js/2.985f36c1.chunk.js",
+    "static/js/2.985f36c1.chunk.js.map": "/ListsWeb/static/js/2.985f36c1.chunk.js.map",
+    "static/js/3.e4dfab3c.chunk.js": "/ListsWeb/static/js/3.e4dfab3c.chunk.js",
+    "static/js/3.e4dfab3c.chunk.js.map": "/ListsWeb/static/js/3.e4dfab3c.chunk.js.map",
     "index.html": "/ListsWeb/index.html",
     "static/css/2.f0b773ec.chunk.css.map": "/ListsWeb/static/css/2.f0b773ec.chunk.css.map",
-    "static/css/main.3469682c.chunk.css.map": "/ListsWeb/static/css/main.3469682c.chunk.css.map",
-    "static/js/2.82cbe035.chunk.js.LICENSE.txt": "/ListsWeb/static/js/2.82cbe035.chunk.js.LICENSE.txt",
+    "static/css/main.3a1f2359.chunk.css.map": "/ListsWeb/static/css/main.3a1f2359.chunk.css.map",
+    "static/js/2.985f36c1.chunk.js.LICENSE.txt": "/ListsWeb/static/js/2.985f36c1.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/ListsWeb/static/media/arrow_right.0897f985.svg",
     "static/media/all.min.css": "/ListsWeb/static/media/fa-solid-900.f4f93856.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.708c8dbb.js",
+    "static/js/runtime-main.6d134e5f.js",
     "static/css/2.f0b773ec.chunk.css",
-    "static/js/2.82cbe035.chunk.js",
-    "static/css/main.3469682c.chunk.css",
-    "static/js/main.ebed056c.chunk.js"
+    "static/js/2.985f36c1.chunk.js",
+    "static/css/main.3a1f2359.chunk.css",
+    "static/js/main.107ad8ea.chunk.js"
   ]
 }

@@ -4,6 +4,7 @@ import "./AnimeInfoComponent.css";
 import Button from 'react-bootstrap/Button'
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import { NavLink } from "react-router-dom";
 
 const getToken = () => {
     const tokenString = localStorage.getItem('token');
@@ -56,6 +57,7 @@ class AnimeInfoComponent extends Component {
   }
 
   render() {
+    let path = "/ListsWeb/anime/info/edit/" +  this.state.anime.id;
     return (
       <React.Fragment>
         <Grid container spacing={6}>
@@ -84,7 +86,9 @@ class AnimeInfoComponent extends Component {
                 <Paper className="display-item-paper">ADDITIONAL COMMENTS<br />{this.state.anime.additional_comments}</Paper>
             </Grid>
             <Grid item xs={6}>
+              <NavLink exact activeClassName="current" to={path}>
                 <Button className="button-edit">Edit</Button>
+              </NavLink>
             </Grid>
             <Grid item xs={6}>
                 <Button className="button-delete" onClick={this.handleDelete}>Delete</Button>
