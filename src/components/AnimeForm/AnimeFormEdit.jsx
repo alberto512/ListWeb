@@ -39,7 +39,7 @@ class AnimeFormEdit extends Component {
     async getData() {
         let data = await axios
           .get(
-            "http://127.0.0.1:8000/api/anime/" +
+            "https://lists-backend-web.herokuapp.com/api/anime/" +
               this.props.anime.params.id, {
                 headers: {
                     "Authorization": "Token " + getToken()
@@ -126,7 +126,7 @@ class AnimeFormEdit extends Component {
             }
 
             axios.put(
-                "http://127.0.0.1:8000/api/anime/" + this.state.anime.id + "/", formData, {
+                "https://lists-backend-web.herokuapp.com/api/anime/" + this.state.anime.id + "/", formData, {
                     headers: {
                         "Authorization": "Token " + getToken()
                     }

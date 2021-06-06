@@ -79,7 +79,7 @@ class AnimeForm extends Component {
 
       axios
         .post(
-          "http://127.0.0.1:8000/api/anime/",formData, {
+          "https://lists-backend-web.herokuapp.com/api/anime/",formData, {
               headers: {
                 "Authorization": "Token " + getToken()
               }

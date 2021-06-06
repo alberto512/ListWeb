@@ -77,7 +77,7 @@ class ItemDeck extends Component {
   async getData(url) {
 
     let arrayaux2 = await axios
-      .get("http://127.0.0.1:8000/api/"+ url + "/", {
+      .get("https://lists-backend-web.herokuapp.com/"+ url + "/", {
         headers: {
           "Authorization": "Token " + getToken()
         }
@@ -103,7 +103,7 @@ class ItemDeck extends Component {
 
   async getDataCustom(value, url) {
     let arrayaux2 = await axios
-      .get("http://127.0.0.1:8000/api/" + url + "/", {
+      .get("https://lists-backend-web.herokuapp.com/" + url + "/", {
         headers: {
           "Authorization": "Token " + getToken()
         }

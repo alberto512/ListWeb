@@ -7,7 +7,7 @@ import "./SignUp.css";
 
 async function auth(formData) {
     return await axios.post(
-        "http://127.0.0.1:8000/api/signup/",
+        "https://lists-backend-web.herokuapp.com/api/signup/",
         formData
     ).then(response => {
         return response.data;

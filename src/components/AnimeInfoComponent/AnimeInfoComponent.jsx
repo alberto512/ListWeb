@@ -24,7 +24,7 @@ class AnimeInfoComponent extends Component {
   async getData() {
     let data = await axios
       .get(
-        "http://127.0.0.1:8000/api/anime/" +
+        "https://lists-backend-web.herokuapp.com/api/anime/" +
           this.props.anime.params.id, {
             headers: {
                 "Authorization": "Token " + getToken()
@@ -39,7 +39,7 @@ class AnimeInfoComponent extends Component {
   }
 
   handleDelete = (e) => {
-    axios.delete("http://localhost:8000/api/anime/" + this.state.anime.id + "/", {
+    axios.delete("https://lists-backend-web.herokuapp.com/api/anime/" + this.state.anime.id + "/", {
         headers: {
           "Authorization": "Token " + getToken()
         }
