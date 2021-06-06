@@ -38,14 +38,15 @@ class AnimeInfoComponent extends Component {
   }
 
   handleDelete = (e) => {
-    e.preventDefault();
+    //e.preventDefault();
     axios.delete("http://localhost:8000/api/anime/" + this.state.anime.id + "/", {
         headers: {
           "Authorization": "Token " + getToken()
         }
       }
+    ).then(
+      window.location.href = "https://alberto512.github.io/ListsWeb/anime/"
     )
-    window.location.replace("https://alberto512.github.io/ListsWeb/anime")
   };
 
   componentDidMount() {
