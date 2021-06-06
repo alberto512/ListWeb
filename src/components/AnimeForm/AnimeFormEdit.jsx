@@ -48,9 +48,17 @@ class AnimeFormEdit extends Component {
           )
           .then(function (response) {
             return response.data;
-          });
+            });
+
+        if (!data.platform) {
+            data.platform = ""
+        }
+
+        if (!data.next_season) {
+            data.next_season = ""
+        }
     
-        if (!data.additional_comments){
+        if (!data.additional_comments) {
             data.additional_comments = ""
         }
         this.setState({ anime: data });
