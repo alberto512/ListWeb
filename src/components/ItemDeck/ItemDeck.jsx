@@ -77,7 +77,7 @@ class ItemDeck extends Component {
   async getData(url) {
 
     let arrayaux2 = await axios
-      .get("https://lists-backend-web.herokuapp.com/"+ url + "/", {
+      .get("https://lists-backend-web.herokuapp.com/api/"+ url + "/", {
         headers: {
           "Authorization": "Token " + getToken()
         }
@@ -103,7 +103,7 @@ class ItemDeck extends Component {
 
   async getDataCustom(value, url) {
     let arrayaux2 = await axios
-      .get("https://lists-backend-web.herokuapp.com/" + url + "/", {
+      .get("https://lists-backend-web.herokuapp.com/api/" + url + "/", {
         headers: {
           "Authorization": "Token " + getToken()
         }
