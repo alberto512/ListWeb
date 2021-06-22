@@ -95,6 +95,7 @@ class ItemDeck extends Component {
           auxArray[i].push(response.data[aux]);
           j++;
         }
+        auxArray.sort(function compareFn(firstEl, secondEl) {firstEl.title.compareTo(secondEl.title)});
         return auxArray;
       });
 
@@ -123,6 +124,7 @@ class ItemDeck extends Component {
             j++;
           }
         }
+        auxArray.sort(function compareFn(firstEl, secondEl) {firstEl.title.compareTo(secondEl.title)});
         return auxArray;
       });
     this.setState({ myArray: arrayaux2 });
