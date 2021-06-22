@@ -92,16 +92,8 @@ class ItemDeck extends Component {
         }
 
         console.log(arrayResponse)
-        arrayResponse.sort(function compareFn(firstEl, secondEl) {
-          console.log(firstEl.title)
-          console.log(secondEl.title)
-          let t1 = firstEl.title
-          console.log(t1)
-          console.log(typeof t1)
-          let t2 = secondEl.title
-          console.log(t2)
-          console.log(typeof t2)
-          return t1.compareTo(t2)
+        arrayResponse.sort((firstEl, secondEl) => {
+          firstEl.title.compareTo(secondEl.title)
         });
         console.log(arrayResponse)
 
