@@ -91,11 +91,9 @@ class ItemDeck extends Component {
           arrayResponse.push(response.data[aux]);
         }
 
-        console.log(arrayResponse)
         arrayResponse.sort((firstEl, secondEl) => {
           return firstEl.title.localeCompare(secondEl.title)
         });
-        console.log(arrayResponse)
 
         for (let aux in arrayResponse) {
           if (j === 3) {
@@ -121,16 +119,27 @@ class ItemDeck extends Component {
       })
       .then(function (response) {
         let auxArray = [[]];
+        let arrayResponse = [];
         let i = 0;
         let j = 0;
+
         for (let aux in response.data) {
+          arrayResponse.push(response.data[aux]);
+        }
+
+        arrayResponse.sort((firstEl, secondEl) => {
+          return firstEl.title.localeCompare(secondEl.title)
+        });
+
+
+        for (let aux in arrayResponse) {
           if (j === 3) {
             j = 0;
             i++;
             auxArray[i] = [];
           }
-          if (response.data[aux].title.includes(value)) {
-            auxArray[i].push(response.data[aux]);
+          if (arrayResponse[aux].title.includes(value)) {
+            auxArray[i].push(arrayResponse[aux]);
             j++;
           }
         }
