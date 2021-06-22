@@ -21,7 +21,7 @@ function Empty(props) {
   const cont = props.counter;
   if (cont === 0) {
     return (
-      <div className="container">
+      <div>
         <h1>No matching items</h1>
       </div>
     );
@@ -172,7 +172,7 @@ class ItemDeck extends Component {
                 let auxstr = "/ListsWeb/" + this.props.url + "/info/" +  value.id;
                 return (
                   <Card className="item_card" key={index}>
-                    <Card.Img variant="top" src={value.image} />
+                    <Card.Img className="item-img" variant="top" src={value.image} />
                     <Card.Body className="item-card-body">
                       <Card.Title>{value.title}</Card.Title>
                       <NavLink exact activeClassName="current" to={auxstr}>

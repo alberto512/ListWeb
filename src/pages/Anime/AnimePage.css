@@ -1,0 +1,34 @@
+html {
+  overflow-x: hidden;
+}
+
+.item-deck-anime {
+  position: absolute;
+  top: 40%;
+}
+
+.button-anime {
+  color: white !important;
+  background-color: #A9801A !important;
+  position: absolute !important;
+  margin: 20px !important;
+  top: 0% !important;
+  right: 0% !important;
+}
+
+.button-anime-link {
+  color: white !important;
+}
+
+.item-deck-anime .card-deck .item-card-body {
+  background-color: #A9801A !important;
+}
+
+.search-anime .container-search .tb .td .input-bar[type="text"]::placeholder {
+  color: #ffc637;
+}
+
+.search-anime .container-search {
+  background-color: #A9801A;
+  box-shadow: 0 10px 40px #A9801A, 0 0 0 20px #ffffff;
+}

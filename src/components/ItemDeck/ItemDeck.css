@@ -30,3 +30,7 @@
   width: 100% !important;
   height: 15vw !important;
 }
+
+.item-img {
+  object-fit: cover;
+}

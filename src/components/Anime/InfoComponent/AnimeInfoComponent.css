@@ -1,0 +1,21 @@
+.MuiGrid-spacing-xs-6 {
+    width: 100% !important;
+    margin: 0% !important;
+}
+
+.display-item-anime-paper {
+    display: flex !important;
+    height: 150% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #A9801A !important;
+    color: white !important;
+}
+
+.button-delete {
+    background-color: red !important;
+}
+
+.button-edit {
+    background-color: #a8328f !important;
+}

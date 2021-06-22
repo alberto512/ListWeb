@@ -69,9 +69,3 @@ ul li a:hover {
   color: black;
   cursor: pointer;
 }
-
-@media screen and (max-width: 500px) {
-  .modal-box {
-    width: 40% !important;
-  }
-}

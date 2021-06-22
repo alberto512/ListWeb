@@ -4,7 +4,7 @@ import "./Home.css";
 
 class Home extends Component {
   componentDidMount() {
-    document.body.style.backgroundColor = "#D2A5FF"
+    document.body.style.backgroundColor = "#D2A5FF";
   }
 
   render() {
@@ -12,7 +12,7 @@ class Home extends Component {
       <React.Fragment>
         <NavBarGroup />
           <div className="title">
-            <h1 className="lists">Lists Web</h1>
+            <h1 className="lists-title">Lists Web</h1>
           </div>
       </React.Fragment>
     );

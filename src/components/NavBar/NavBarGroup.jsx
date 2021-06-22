@@ -65,6 +65,31 @@ function NavBarGroup() {
                 </NavLink>
               </li>
               <li>
+                <NavLink exact activeClassName="current" to="/ListsWeb/manga/">
+                  Manga
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="current" to="/ListsWeb/book/">
+                  Book
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="current" to="/ListsWeb/movie/">
+                  Movie
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="current" to="/ListsWeb/series/">
+                  Series
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="current" to="/ListsWeb/videogame/">
+                  Videogame
+                </NavLink>
+              </li>
+              <li>
                 <NavLink exact activeClassName="current" to="/ListsWeb/" onClick={logout}>
                   Logout
                 </NavLink>

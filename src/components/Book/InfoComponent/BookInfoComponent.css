@@ -1,0 +1,22 @@
+.MuiGrid-spacing-xs-6 {
+    width: 100% !important;
+    margin: 0% !important;
+}
+
+.display-item-book-paper {
+    display: flex !important;
+    height: 150% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #03429b !important;
+    color: white !important;
+}
+
+
+.button-delete {
+    background-color: red !important;
+}
+
+.button-edit {
+    background-color: #a8328f !important;
+}

@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import Card from 'react-bootstrap/Card'
-import Nav from 'react-bootstrap/Nav'   
-import SignUp from '../components/SignUp/SignUp'
-import Login from '../components/Login/Login'
-import NavBarGroup from "../components/NavBar/NavBarGroup";
+import Card from 'react-bootstrap/Card';
+import Nav from 'react-bootstrap/Nav';
 import useToken from '../useToken';
-import "./FormAuthPage.css"
+import SignUp from '../components/Auth/SignUp';
+import Login from '../components/Auth/Login';
+import NavBarGroup from "../components/NavBar/NavBarGroup";
+import "./FormAuthPage.css";
 
-function Text(props) {
+function Option(props) {
     const url = props.url;
     if (url.includes("sign")) {
       return <SignUp setToken={props.setToken}/>;
@@ -18,9 +18,11 @@ function Text(props) {
 
 const FormAuthPage = () => {
   const { setToken } = useToken();
+
   useEffect(() => {
     document.body.style.backgroundColor = "#D2A5FF"
   });
+
   return (
     <React.Fragment>
       <NavBarGroup />
@@ -37,7 +39,7 @@ const FormAuthPage = () => {
                 </Nav>
             </Card.Header>
             <Card.Body>
-                <Text url={window.location.href} setToken={setToken} />
+                <Option url={window.location.href} setToken={setToken} />
             </Card.Body>
         </Card>
       </div>

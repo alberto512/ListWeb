@@ -5,9 +5,9 @@ function useToken() {
     const tokenString = localStorage.getItem('token');
     const userToken = JSON.parse(tokenString);
     if (userToken) {
-      return userToken
+      return userToken;
     } else {
-      return undefined
+      return undefined;
     }
   };
 

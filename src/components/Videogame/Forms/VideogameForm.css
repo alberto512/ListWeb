@@ -1,0 +1,23 @@
+.label {
+    color: black;
+}
+  
+.custom-card {
+    right: 5%;
+    left: 5%;
+    width: 90%;
+    position: absolute;
+    top: 10%;
+}
+  
+.card-header-videogame {
+    background-color: #7D83FF !important;
+}
+  
+.card-body-videogame {
+    background-color: #c8cbff !important;
+}
+  
+.custom-file-label {
+    z-index: 0 !important;
+}

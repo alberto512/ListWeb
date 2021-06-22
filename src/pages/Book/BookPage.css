@@ -1,0 +1,34 @@
+html {
+  overflow-x: hidden;
+}
+
+.item-deck-book {
+  position: absolute;
+  top: 40%;
+}
+
+.button-book {
+  color: white !important;
+  background-color: #03429b !important;
+  position: absolute !important;
+  margin: 20px !important;
+  top: 0% !important;
+  right: 0% !important;
+}
+
+.button-book-link {
+  color: white !important;
+}
+
+.item-deck-book .card-deck .item-card-body {
+  background-color: #03429b !important;
+}
+
+.search-book .container-search .tb .td .input-bar[type="text"]::placeholder {
+  color: #2c84ff;
+}
+
+.search-book .container-search {
+  background-color: #03429b;
+  box-shadow: 0 10px 40px #03429b, 0 0 0 20px #ffffff;
+}
