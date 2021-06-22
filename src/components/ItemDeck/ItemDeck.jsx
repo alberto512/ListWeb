@@ -93,7 +93,7 @@ class ItemDeck extends Component {
 
         console.log(arrayResponse)
         arrayResponse.sort((firstEl, secondEl) => {
-          firstEl.title.compareTo(secondEl.title)
+          firstEl.title.localeCompare(secondEl.title)
         });
         console.log(arrayResponse)
 
