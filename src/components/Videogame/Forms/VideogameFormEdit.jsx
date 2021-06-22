@@ -57,8 +57,8 @@ class VideogameFormEdit extends Component {
             data.next_videogame = ""
         }
 
-        if (!data.next_platform) {
-            data.next_platform = ""
+        if (!data.platform) {
+            data.platform = ""
         }
     
         if (!data.additional_comments) {
