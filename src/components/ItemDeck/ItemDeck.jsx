@@ -95,7 +95,15 @@ class ItemDeck extends Component {
           auxArray[i].push(response.data[aux]);
           j++;
         }
-        auxArray.sort(function compareFn(firstEl, secondEl) {firstEl.title.compareTo(secondEl.title)});
+        console.log(auxArray)
+        auxArray.sort(function compareFn(firstEl, secondEl) {
+          console.log(firstEl)
+          console.log(secondEl)
+          console.log(firstEl.title)
+          console.log(secondEl.title)
+          return 0
+        });
+        console.log(auxArray)
         return auxArray;
       });
 
@@ -124,15 +132,6 @@ class ItemDeck extends Component {
             j++;
           }
         }
-        console.log(auxArray)
-        auxArray.sort(function compareFn(firstEl, secondEl) {
-          console.log(firstEl)
-          console.log(secondEl)
-          console.log(firstEl.title)
-          console.log(secondEl.title)
-          firstEl.title.compareTo(secondEl.title)
-        });
-        console.log(auxArray)
         return auxArray;
       });
     this.setState({ myArray: arrayaux2 });
