@@ -57,8 +57,8 @@ class MovieFormEdit extends Component {
             data.next_movie = ""
         }
 
-        if (!data.next_platform) {
-            data.next_platform = ""
+        if (!data.platform) {
+            data.platform = ""
         }
     
         if (!data.additional_comments) {
