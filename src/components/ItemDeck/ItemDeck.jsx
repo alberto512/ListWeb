@@ -84,26 +84,32 @@ class ItemDeck extends Component {
       })
       .then(function (response) {
         let auxArray = [[]];
+        let arrayResponse = [];
         let i = 0;
         let j = 0;
         for (let aux in response.data) {
+          arrayResponse.push(response.data[aux]);
+        }
+
+        console.log(arrayResponse)
+        arrayResponse.sort(function compareFn(firstEl, secondEl) {
+          console.log(firstEl)
+          console.log(secondEl)
+          console.log(firstEl.title)
+          console.log(secondEl.title)
+          //firstEl.title.compareTo(secondEl.title)
+        });
+        console.log(arrayResponse)
+
+        for (let aux in arrayResponse) {
           if (j === 3) {
             j = 0;
             i++;
             auxArray[i] = [];
           }
-          auxArray[i].push(response.data[aux]);
+          auxArray[i].push(arrayResponse[aux]);
           j++;
         }
-        console.log(auxArray)
-        auxArray.sort(function compareFn(firstEl, secondEl) {
-          console.log(firstEl)
-          console.log(secondEl)
-          console.log(firstEl.title)
-          console.log(secondEl.title)
-          return 0
-        });
-        console.log(auxArray)
         return auxArray;
       });
 
